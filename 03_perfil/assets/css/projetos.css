@@ -1,0 +1,82 @@
+/* ===== Página de projetos ===== */
+.projetos-page { padding: 40px 20px; }
+.projetos-page > h1 { text-align: center; margin-bottom: 24px; }
+
+/* Filtro de busca */
+.busca {
+  display: flex;
+  gap: 10px;
+  max-width: 520px;
+  margin: 0 auto 28px;
+}
+.busca input {
+  flex: 1;
+  font: inherit;
+  padding: 10px 12px;
+  border: 1px solid var(--blue-100);
+  border-radius: 8px;
+}
+.busca input:focus {
+  outline: 2px solid var(--blue-500);
+  border-color: var(--blue-500);
+}
+
+/* Lista */
+.lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.proj {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 20px;
+  border: 1px solid var(--blue-100);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+.proj-foto {
+  background: var(--blue-100);
+  border-radius: 8px;
+  min-height: 120px;
+}
+.proj-info h2 { font-size: 1.2rem; margin-bottom: 6px; }
+.proj-info p { color: var(--muted); }
+.proj-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 10px;
+  font-size: .9rem;
+  color: var(--blue-700);
+}
+
+/* Paginação */
+.paginacao {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 32px;
+}
+.paginacao a {
+  min-width: 40px;
+  padding: 8px 12px;
+  text-align: center;
+  border: 1px solid var(--blue-100);
+  border-radius: 8px;
+  color: var(--blue-700);
+  font-weight: 600;
+}
+.paginacao a:hover { background: var(--blue-50); }
+.paginacao a.ativo {
+  background: var(--blue-700);
+  color: #fff;
+  border-color: var(--blue-700);
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 720px) {
+  .proj { grid-template-columns: 1fr; }
+  .proj-foto { min-height: 160px; }
+}

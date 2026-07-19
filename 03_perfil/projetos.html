@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos — NOME</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/projetos.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">NOME</a>
+
+      <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="index.html">Início</a>
+        <a href="formacoes.html">Formação</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container projetos-page">
+    <h1>Projetos</h1>
+
+    <!-- Filtro de busca -->
+    <form class="busca" role="search" onsubmit="return false">
+      <input type="search" placeholder="Buscar projeto..." aria-label="Buscar projeto">
+      <button type="submit" class="btn-primary">Buscar</button>
+    </form>
+
+    <!-- Lista de projetos -->
+    <ul class="lista">
+      <li class="proj">
+        <div class="proj-foto" aria-hidden="true"></div>
+        <div class="proj-info">
+          <h2>Projeto Um</h2>
+          <p>Breve descrição do projeto, tecnologias usadas e o que foi construído.</p>
+          <p class="proj-meta">
+            <span>📅 Jan 2025 – Mar 2025</span>
+            <span>📍 Natal, RN</span>
+          </p>
+        </div>
+      </li>
+      <li class="proj">
+        <div class="proj-foto" aria-hidden="true"></div>
+        <div class="proj-info">
+          <h2>Projeto Dois</h2>
+          <p>Breve descrição do projeto, tecnologias usadas e o que foi construído.</p>
+          <p class="proj-meta">
+            <span>📅 Abr 2025 – Jul 2025</span>
+            <span>📍 Remoto</span>
+          </p>
+        </div>
+      </li>
+      <li class="proj">
+        <div class="proj-foto" aria-hidden="true"></div>
+        <div class="proj-info">
+          <h2>Projeto Três</h2>
+          <p>Breve descrição do projeto, tecnologias usadas e o que foi construído.</p>
+          <p class="proj-meta">
+            <span>📅 Ago 2025 – Dez 2025</span>
+            <span>📍 Mossoró, RN</span>
+          </p>
+        </div>
+      </li>
+    </ul>
+
+    <!-- Paginação -->
+    <nav class="paginacao" aria-label="Paginação">
+      <a href="#" aria-label="Página anterior">‹</a>
+      <a href="#" class="ativo" aria-current="page">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#" aria-label="Próxima página">›</a>
+    </nav>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 NOME. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
